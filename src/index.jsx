@@ -6,6 +6,7 @@ import Error from "./pages/error";
 import Housing from "./pages/housing";
 import About from "./pages/about";
 import Header from "./components/header";
+import Footer from "./components/footer";
 import "./styles/index.css";
 
 // const router = createBrowserRouter([
@@ -38,6 +39,7 @@ root.render(
         <Route path="/fiche-logement" element={<Housing />}></Route>
         <Route path="/a-propos" element={<About />}></Route>
       </Routes>
+      <Footer />
     </BrowserRouter>
   </React.StrictMode>
 );
