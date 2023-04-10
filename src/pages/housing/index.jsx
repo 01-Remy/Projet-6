@@ -1,5 +1,14 @@
+import Header from "../../components/header";
+import Footer from "../../components/footer";
+
 function Housing() {
-  return <div>Fiche Logement</div>;
+  return (
+    <div>
+      <Header />
+      <h2>Fiche Logement</h2>
+      <Footer />
+    </div>
+  );
 }
 
 export default Housing;

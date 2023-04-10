@@ -1,0 +1,37 @@
+@import "./variables.scss";
+
+.kasa-header {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  margin-inline: 20px;
+  @media #{$xl-layout} {
+    margin-top: 40px;
+    margin-inline: 100px;
+  }
+  img {
+    max-width: 145px;
+    max-height: 47px;
+    @media #{$xl-layout} {
+      max-width: 210px;
+      max-height: 68px;
+    }
+  }
+  nav {
+    display: flex;
+    margin-left: auto;
+    gap: 10px;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 142.6%;
+    @media #{$xl-layout} {
+      gap: 57px;
+      text-transform: capitalize;
+      font-size: 24px;
+    }
+    a {
+      color: $main-color;
+    }
+  }
+}
