@@ -1,7 +1,6 @@
 import { Link, useRouteError } from "react-router-dom";
 import Header from "../../components/header";
 import Footer from "../../components/footer";
-import "../../sass/Error.scss";
 
 function Error() {
   let error = useRouteError();

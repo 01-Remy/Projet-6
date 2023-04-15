@@ -1,4 +1,22 @@
-@import "./variables.scss";
+.kasa-house-list {
+  display: grid;
+  grid: auto / 1fr;
+  gap: 20px;
+  @media #{$md-layout} {
+    padding: 28px 25px;
+    border-radius: 20px;
+    column-gap: 40px;
+    row-gap: 30px;
+    background-color: #{$kasa-grey};
+    grid: auto / 1fr 1fr;
+  }
+  @media #{$xxl-layout} {
+    padding: 56px 50px;
+    column-gap: 60px;
+    row-gap: 50px;
+    grid: auto / 1fr 1fr 1fr;
+  }
+}
 
 .kasa-house-card {
   display: flex;
@@ -8,6 +26,7 @@
   height: 255px;
   position: relative;
   color: white;
+  cursor: pointer;
   @media #{$lg-layout} {
     height: 340px;
   }
@@ -34,10 +53,6 @@
     width: 100%;
     top: 0;
     left: 0;
-    background: linear-gradient(
-      180deg,
-      rgba(255, 255, 255, 0) 0%,
-      rgba(0, 0, 0, 0.5) 100%
-    );
+    @include bg-shadow-gradient;
   }
 }

@@ -1,5 +1,3 @@
-@import "./variables.scss";
-
 .kasa-banner {
   display: flex;
   align-items: center;
@@ -38,11 +36,5 @@
       font-size: 48px;
       line-height: 142.6%;
     }
-  }
-}
-
-.kasa-about {
-  .kasa-banner {
-    height: 223px;
   }
 }

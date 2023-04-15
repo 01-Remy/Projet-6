@@ -4,6 +4,7 @@ import Home from "./pages/home";
 import Error from "./pages/error";
 import Housing from "./pages/housing";
 import About from "./pages/about";
+import "./styles/style.scss";
 
 const router = createBrowserRouter([
   {

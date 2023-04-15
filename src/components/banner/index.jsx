@@ -1,5 +1,3 @@
-import "../../sass/Banner.scss";
-
 function Banner({ title, image, alt }) {
   return (
     <div className="kasa-banner">

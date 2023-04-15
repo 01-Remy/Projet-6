@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import logo from "../../assets/logo.svg";
-import "../../sass/Header.scss";
 
 function Header() {
   return (
@@ -9,6 +8,7 @@ function Header() {
       <nav>
         <Link to="/">Accueil</Link>
         <Link to="/a-propos">À propos</Link>
+        <Link to="/error">error-temp</Link>
       </nav>
     </header>
   );
