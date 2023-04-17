@@ -1,7 +1,7 @@
 import Header from "../../components/header";
 import Footer from "../../components/footer";
 import Banner from "../../components/banner";
-import HouseList from "../../components/houseList";
+import ApartmentList from "../../components/apartmentList";
 import bannerImg from "../../assets/homeBanner.png";
 
 function Home() {
@@ -13,7 +13,7 @@ function Home() {
       <div className="container">
         <Header />
         <Banner title={title} image={bannerImg} alt={bannerAlt} />
-        <HouseList />
+        <ApartmentList />
       </div>
       <Footer />
     </div>

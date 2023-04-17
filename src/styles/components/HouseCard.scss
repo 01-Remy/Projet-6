@@ -1,4 +1,4 @@
-.kasa-house-list {
+.kasa-apartment-list {
   display: grid;
   grid: auto / 1fr;
   gap: 20px;
@@ -16,9 +16,12 @@
     row-gap: 50px;
     grid: auto / 1fr 1fr 1fr;
   }
+  a {
+    text-decoration: none;
+  }
 }
 
-.kasa-house-card {
+.kasa-apartment-card {
   display: flex;
   align-items: flex-end;
   border-radius: 10px;

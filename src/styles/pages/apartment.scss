@@ -1,0 +1,71 @@
+.kasa-apartment-page {
+  color: #{$main-color};
+  font-size: 14px;
+  line-height: 142.6%;
+  .apartment-info {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    @media #{$md-layout} {
+      flex-direction: row;
+    }
+    @media #{$lg-layout} {
+      margin-top: 30px;
+    }
+  }
+  .title {
+    font-weight: 500;
+    font-size: 18px;
+    margin: 0;
+    @media #{$lg-layout} {
+      font-size: 36px;
+    }
+  }
+  .subtitle {
+    font-weight: 500;
+    margin-top: 5px;
+    @media #{$lg-layout} {
+      font-size: 18px;
+      margin-top: 20px;
+    }
+  }
+  .apartment-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .bottom-info {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    flex-direction: row-reverse;
+    @media (min-width: 230px) {
+      flex-wrap: nowrap;
+    }
+    @media #{$md-layout} {
+      flex-direction: column;
+      margin-left: auto;
+    }
+    .kasa-star-score {
+      margin-right: auto;
+      @media #{$md-layout} {
+        margin-right: 0;
+        justify-content: right;
+      }
+    }
+  }
+  .kasa-collapse-list {
+    @media #{$lg-layout} {
+      flex-direction: row;
+    }
+    > div {
+      @media #{$lg-layout} {
+        width: 50%;
+      }
+      .content {
+        @media #{$lg-layout} {
+          min-height: 250px;
+        }
+      }
+    }
+  }
+}

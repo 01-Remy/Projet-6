@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-function CollapseItem({ title, description }) {
+function CollapseItem({ title, content }) {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -15,7 +15,15 @@ function CollapseItem({ title, description }) {
         </button>
         {isOpen ? (
           <div className="content">
-            <p>{description}</p>
+            {typeof content === "object" ? (
+              <ul>
+                {content.map((elem, index) => (
+                  <li key={index}>{elem}</li>
+                ))}
+              </ul>
+            ) : (
+              <p>{content}</p>
+            )}
           </div>
         ) : null}
       </div>

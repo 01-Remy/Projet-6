@@ -47,9 +47,15 @@
     border-radius: 5px;
     color: #{$main-color};
     background-color: #{$kasa-grey};
-    p {
+    p,
+    ul {
       margin: 0;
       padding: 23px 6px 50px 12px;
+      font-size: 12px;
+      line-height: 142.6%;
+      @media #{$lg-layout} {
+        font-size: 18px;
+      }
     }
   }
 }
