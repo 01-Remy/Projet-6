@@ -10,4 +10,4 @@ Pages :
   - Erreur
   - Appartement
   
- Site intégré en mobile first avec les breakpoints : 576px, 768px, 992px, 1200px, 1400px.
+ Site intégré en mobile first.
