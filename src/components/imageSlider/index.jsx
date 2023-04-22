@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-function ImageSlider({ pictures, title }) {
+function ImageSlider({ pictures }) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const onlyOneImage = pictures.length === 1;
 

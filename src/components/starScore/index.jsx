@@ -6,7 +6,7 @@ function StarScore({ maxScore, currentScore }) {
 
   for (let i = 0; i < maxScore; i++) {
     content.push({
-      id: i,
+      id: "star-logo-" + i,
       type: i < currentScore ? "full" : null,
     });
   }

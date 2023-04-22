@@ -57,13 +57,21 @@
     @media #{$lg-layout} {
       flex-direction: row;
     }
-    > div {
+    .kasa-collapsible {
+      width: 100%;
+      @media #{$lg-layout} {
+        margin-bottom: 30px;
+      }
+    }
+    li {
+      display: flex;
       @media #{$lg-layout} {
         width: 50%;
       }
       .content {
+        width: 100%;
         @media #{$lg-layout} {
-          min-height: 250px;
+          height: 100%;
         }
       }
     }

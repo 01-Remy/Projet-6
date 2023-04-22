@@ -5,9 +5,9 @@ function CollapseItemList({ infoTable }) {
     <div>
       <ul className="kasa-collapse-list">
         {infoTable.map(({ id, title, content }) => (
-          <div key={id}>
+          <li key={id}>
             <CollapseItem title={title} content={content} />
-          </div>
+          </li>
         ))}
       </ul>
     </div>

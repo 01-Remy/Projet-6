@@ -42,7 +42,7 @@ function Apartment() {
     <div className="kasa-apartment-page">
       <div className="container">
         <Header />
-        <ImageSlider pictures={apartment.pictures} title={apartment.title} />
+        <ImageSlider pictures={apartment.pictures} />
         <div className="apartment-info">
           <div>
             <h2 className="title">{apartment.title}</h2>
