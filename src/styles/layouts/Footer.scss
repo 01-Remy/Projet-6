@@ -1,0 +1,18 @@
+.kasa-footer {
+  display: flex;
+  flex-direction: column;
+  height: 210px;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  color: white;
+  font-weight: 500;
+  font-size: 12px;
+  gap: 30px;
+  @media #{$lg-layout} {
+    font-size: 24px;
+  }
+  p {
+    margin: 0;
+  }
+}
