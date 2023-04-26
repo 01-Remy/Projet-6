@@ -6,11 +6,11 @@
     padding-top: 40px;
   }
   img {
-    max-width: 145px;
-    max-height: 47px;
+    width: 145px;
+    height: 47px;
     @media #{$xl-layout} {
-      max-width: 210px;
-      max-height: 68px;
+      width: 210px;
+      height: 68px;
     }
   }
   nav {

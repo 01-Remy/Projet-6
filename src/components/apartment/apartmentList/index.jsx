@@ -1,4 +1,4 @@
-import apartmentList from "../../datas/logements.json";
+import apartmentList from "../../../datas/logements.json";
 import { Link } from "react-router-dom";
 import ApartmentCard from "../apartmentCard";
 
