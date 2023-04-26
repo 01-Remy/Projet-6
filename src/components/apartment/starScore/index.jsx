@@ -1,5 +1,5 @@
-import starSvg from "../../assets/star.svg";
-import starSvgFull from "../../assets/star-full.svg";
+import starSvg from "../../../assets/star.svg";
+import starSvgFull from "../../../assets/star-full.svg";
 
 function StarScore({ maxScore, currentScore }) {
   let content = [];

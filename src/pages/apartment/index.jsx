@@ -1,11 +1,11 @@
-import Header from "../../components/header";
-import Footer from "../../components/footer";
+import Header from "../../components/layouts/header";
+import Footer from "../../components/layouts/footer";
 import { useParams, Navigate } from "react-router-dom";
 import apartmentList from "../../datas/logements.json";
 import ImageSlider from "../../components/imageSlider";
-import CollapseItemList from "../../components/collapseItemList";
-import Tag from "../../components/tag";
-import StarScore from "../../components/starScore";
+import CollapseItemList from "../../components/collapsible/collapseItemList";
+import Tag from "../../components/apartment/tag";
+import StarScore from "../../components/apartment/starScore";
 import UserProfile from "../../components/userprofile";
 
 function Apartment() {

@@ -1,7 +1,7 @@
-import Header from "../../components/header";
-import Footer from "../../components/footer";
+import Header from "../../components/layouts/header";
+import Footer from "../../components/layouts/footer";
 import Banner from "../../components/banner";
-import ApartmentList from "../../components/apartmentList";
+import ApartmentList from "../../components/apartment/apartmentList";
 import bannerImg from "../../assets/homeBanner.png";
 
 function Home() {

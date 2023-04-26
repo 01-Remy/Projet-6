@@ -1,8 +1,8 @@
-import Header from "../../components/header";
-import Footer from "../../components/footer";
+import Header from "../../components/layouts/header";
+import Footer from "../../components/layouts/footer";
 import Banner from "../../components/banner";
 import bannerImg from "../../assets/aboutBanner.png";
-import CollapseItemList from "../../components/collapseItemList";
+import CollapseItemList from "../../components/collapsible/collapseItemList";
 import aboutInfo from "../../datas/about.json";
 
 function About() {
