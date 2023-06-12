@@ -11,7 +11,7 @@ function Error() {
         <Header />
         <h2>404 !</h2>
         <p>Oups! La page que vous demandez n'existe pas.</p>
-        <Link to="/kasa" className="return">
+        <Link to="/" className="return">
           Retournez sur la page d'accueil
         </Link>
       </div>

@@ -31,7 +31,7 @@ function Apartment() {
   if (!isValid) {
     return (
       <div>
-        <Navigate to="/kasa/error" />
+        <Navigate to="/error" />
       </div>
     );
   }

@@ -6,10 +6,10 @@ function Header() {
     <header className="kasa-header">
       <img src={logo} alt="Logo Kasa"></img>
       <nav>
-        <Link to="/kasa" className="home-link">
+        <Link to="/" className="home-link">
           Accueil
         </Link>
-        <Link to="/kasa/a-propos" className="about-link">
+        <Link to="/a-propos" className="about-link">
           À propos
         </Link>
       </nav>
