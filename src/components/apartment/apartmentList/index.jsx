@@ -8,7 +8,7 @@ function ApartmentList() {
       <ul className="kasa-apartment-list">
         {apartmentList.map(({ id, title, cover }) => (
           <li key={id}>
-            <Link to={"/appartement/" + id}>
+            <Link to={"/kasa/appartement/" + id}>
               <ApartmentCard title={title} cover={cover} />
             </Link>
           </li>

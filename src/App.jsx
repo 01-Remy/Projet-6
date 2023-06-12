@@ -8,7 +8,7 @@ import "./styles/style.scss";
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/kasa",
     element: <Home />,
     errorElement: <Error />,
   },
@@ -17,12 +17,16 @@ const router = createBrowserRouter([
     element: <Error />,
   },
   {
-    path: "/appartement/:apartId",
+    path: "/kasa/error",
+    element: <Error />,
+  },
+  {
+    path: "/kasa/appartement/:apartId",
     element: <Apartment />,
     errorElement: <Error />,
   },
   {
-    path: "/a-propos",
+    path: "/kasa/a-propos",
     element: <About />,
     errorElement: <Error />,
   },

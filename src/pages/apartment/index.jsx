@@ -13,9 +13,7 @@ function Apartment() {
   let isValid = false;
   let apartment = {};
 
-  apartmentList.forEach((apart) =>
-    apartId === apart.id ? ((isValid = true), (apartment = apart)) : null
-  );
+  apartmentList.forEach((apart) => (apartId === apart.id ? ((isValid = true), (apartment = apart)) : null));
 
   const collapseInfo = [
     {
@@ -33,7 +31,7 @@ function Apartment() {
   if (!isValid) {
     return (
       <div>
-        <Navigate to="/error" />
+        <Navigate to="/kasa/error" />
       </div>
     );
   }
@@ -54,10 +52,7 @@ function Apartment() {
             </ul>
           </div>
           <div className="flex bottom-info">
-            <UserProfile
-              name={apartment.host.name}
-              image={apartment.host.picture}
-            />
+            <UserProfile name={apartment.host.name} image={apartment.host.picture} />
             <StarScore maxScore={5} currentScore={parseInt(apartment.rating)} />
           </div>
         </div>
