@@ -1,4 +1,5 @@
 import { useState } from "react";
+import arrowIcon from "../../assets/back-arrow.svg";
 
 function ImageSlider({ pictures }) {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -19,13 +20,16 @@ function ImageSlider({ pictures }) {
   const backgroundImage = {
     backgroundImage: `url(${pictures[currentIndex]})`,
   };
+  const backgroundArrow = {
+    backgroundImage: `url(${arrowIcon})`,
+  };
 
   return (
     <div className="image-slider" style={backgroundImage}>
       {!onlyOneImage ? (
         <div className="slider-nav">
-          <span onClick={goToPrevious} className="arrow left-arrow"></span>
-          <span onClick={goToNext} className="arrow right-arrow"></span>
+          <span onClick={goToPrevious} className="arrow left-arrow" style={backgroundArrow}></span>
+          <span onClick={goToNext} className="arrow right-arrow" style={backgroundArrow}></span>
           <div className="slide-counter">
             {currentIndex + 1}/{pictures.length}
           </div>

@@ -27,17 +27,15 @@
       height: 47px;
       padding-left: 18px;
     }
-    &::after {
-      content: "";
+    .arrow-icon {
       position: absolute;
       inset: 0;
-      background-image: url("../../assets/back-arrow.svg");
       background-size: 1.2em;
       background-position: calc(100% - 0.5em) center;
       background-repeat: no-repeat;
     }
     &.actif {
-      &::after {
+      .arrow-icon {
         transform: rotateX(180deg);
       }
     }
